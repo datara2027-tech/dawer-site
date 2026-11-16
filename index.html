@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bot Market — готовые Telegram-боты для бизнеса</title>
+<meta name="description" content="Готовые Telegram-боты для бизнеса: запись клиентов для салонов и мастеров, магазин цифровых товаров с приёмом USDT TRC-20 и автовыдачей, рассылка + мини-CRM. Запуск за 10 минут без программиста. Оплата USDT, работает для РФ.">
+<meta property="og:title" content="Готовые Telegram-боты для бизнеса — запуск за 10 минут">
+<meta property="og:description" content="Бот записи, магазин с приёмом USDT, рассылка. Полный исходный код + поддержка 14 дней. Оплата USDT TRC-20.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index,follow">
+<style>
+  :root { --bg:#0e1117; --card:#161b26; --line:#232a38; --text:#e8ecf3; --muted:#98a2b3; --acc:#2dd4bf; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font:16px/1.6 system-ui,'Segoe UI',Roboto,sans-serif; }
+  .wrap { max-width:1000px; margin:0 auto; padding:24px 16px 64px; }
+  header { padding:28px 0 8px; }
+  .logo { font-size:22px; font-weight:700; letter-spacing:.5px; }
+  .logo span { color:var(--acc); }
+  .hero { padding:36px 0 20px; }
+  .hero h1 { font-size:clamp(26px,5vw,42px); line-height:1.2; }
+  .hero p { color:var(--muted); margin-top:12px; max-width:640px; font-size:18px; }
+  .badge { display:inline-block; background:var(--card); border:1px solid var(--line); color:var(--acc);
+           padding:4px 12px; border-radius:99px; font-size:13px; margin-bottom:14px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:28px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px;
+          display:flex; flex-direction:column; gap:10px; }
+  .card h3 { font-size:19px; }
+  .card p { color:var(--muted); font-size:15px; flex:1; }
+  .price { font-size:24px; font-weight:700; color:var(--acc); }
+  .price small { color:var(--muted); font-size:13px; font-weight:400; }
+  .feat { list-style:none; font-size:14px; }
+  .feat li::before { content:"✓ "; color:var(--acc); }
+  .btn { display:block; text-align:center; background:var(--acc); color:#06231f; font-weight:700;
+         padding:11px 16px; border-radius:10px; text-decoration:none; margin-top:8px; }
+  .btn.ghost { background:transparent; color:var(--text); border:1px solid var(--line); }
+  h2 { font-size:24px; margin:48px 0 16px; }
+  .steps { counter-reset:st; }
+  .step { display:flex; gap:14px; padding:12px 0; border-bottom:1px solid var(--line); }
+  .step::before { counter-increment:st; content:counter(st); width:30px; height:30px; flex:0 0 30px;
+                  background:var(--card); border:1px solid var(--line); border-radius:50%;
+                  display:flex; align-items:center; justify-content:center; color:var(--acc); font-weight:700; }
+  .pay { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:24px;
+         display:flex; gap:24px; flex-wrap:wrap; align-items:center; margin-top:12px; }
+  .pay img { background:#fff; border-radius:10px; padding:6px; width:150px; height:150px; }
+  .addr { font-family:ui-monospace,Consolas,monospace; font-size:14px; background:#0b0e14;
+          border:1px solid var(--line); border-radius:8px; padding:10px 12px; word-break:break-all; margin:8px 0; }
+  .net { color:var(--acc); font-weight:700; }
+  details { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin-top:10px; }
+  summary { font-weight:600; cursor:pointer; }
+  details p { color:var(--muted); margin-top:8px; }
+  footer { margin-top:56px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); padding-top:18px; }
+  a { color:var(--acc); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><div class="logo">dawer<span>.tg</span></div></header>
+
+  <section class="hero">
+    <span class="badge">🇷🇺 работает для РФ · оплата USDT · выдача автоматом</span>
+    <h1>Готовые Telegram-боты для твоего бизнеса — запуск за 10 минут</h1>
+    <p>Не нужно программировать и ждать разработчика. Получаешь полный исходный код,
+       инструкцию по запуску и 14 дней поддержки. Оплата — USDT (TRC-20), файлы приходят автоматически.</p>
+  </section>
+
+  <div class="grid">
+    <div class="card">
+      <h3>📅 Бот записи клиентов</h3>
+      <p>Для салонов, мастеров, репетиторов, автосервисов.</p>
+      <ul class="feat">
+        <li>услуги, свободные слоты, дни недели</li>
+        <li>автоматическая запись без переписки</li>
+        <li>уведомления владельцу о каждой записи</li>
+        <li>экспорт всех записей в CSV</li>
+      </ul>
+      <div class="price">25 USDT <small>TRC-20</small></div>
+      <a class="btn" href="https://t.me/dawer2bot">Купить в боте →</a>
+    </div>
+
+    <div class="card">
+      <h3>🛍 Магазин цифровых товаров</h3>
+      <p>Продавай свои файлы/курсы с приёмом USDT и автовыдачей.</p>
+      <ul class="feat">
+        <li>приём USDT (TRC-20) с проверкой в блокчейне</li>
+        <li>автоматическая выдача файла после оплаты</li>
+        <li>уникальная сумма — защита от «забыл оплатить»</li>
+        <li>защита от повторного использования TXID</li>
+      </ul>
+      <div class="price">39 USDT <small>TRC-20</small></div>
+      <a class="btn" href="https://t.me/dawer2bot">Купить в боте →</a>
+    </div>
+
+    <div class="card">
+      <h3>📣 Рассылка + мини-CRM</h3>
+      <p>Собирай базу подписчиков и делай безопасные рассылки.</p>
+      <ul class="feat">
+        <li>автоподписка по /start</li>
+        <li>рассылка HTML-сообщений с лимитом безопасности</li>
+        <li>статистика доставки, теги, mute</li>
+        <li>экспорт базы в CSV</li>
+      </ul>
+      <div class="price">29 USDT <small>TRC-20</small></div>
+      <a class="btn" href="https://t.me/dawer2bot">Купить в боте →</a>
+    </div>
+  </div>
+
+  <h2>Как купить</h2>
+  <div class="steps">
+    <div class="step"><div>Открой <a href="https://t.me/dawer2bot">@dawer2bot</a> и выбери товар.</div></div>
+    <div class="step"><div>Бот выдаст точную сумму с копейками (защита от путаницы) и адрес кошелька.</div></div>
+    <div class="step"><div>Переведи USDT в сети <span class="net">TRON (TRC-20)</span> с любой биржи или кошелька (Bybit, OKX, Bitget, Tonkeeper — мост, Trust Wallet и др.).</div></div>
+    <div class="step"><div>Пришли боту TXID (хэш транзакции) — бот проверит её в блокчейне и сразу отдаст файлы.</div></div>
+  </div>
+
+  <h2>Кошелёк для оплаты</h2>
+  <div class="pay">
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iMjQwIiB2aWV3Qm94PSIwIDAgMzEgMzEiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyI+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTAgMGgzMXYzMUgweiIvPjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTEgMS41aDdtMSAwaDJtMiAwaDFtMiAwaDJtMyAwaDFtMSAwaDdNMSAyLjVoMW01IDBoMW0xIDBoMW0xIDBoMW0zIDBoMm0yIDBoMW0xIDBoMW0xIDBoMW01IDBoMU0xIDMuNWgxbTEgMGgzbTEgMGgxbTMgMGgxbTIgMGgzbTIgMGgxbTMgMGgxbTEgMGgzbTEgMGgxTTEgNC41aDFtMSAwaDNtMSAwaDFtMSAwaDFtNyAwaDVtMSAwaDFtMSAwaDNtMSAwaDFNMSA1LjVoMW0xIDBoM20xIDBoMW0yIDBoMm0yIDBoMW0zIDBoMm0zIDBoMW0xIDBoM20xIDBoMU0xIDYuNWgxbTUgMGgxbTIgMGgxbTEgMGgxbTIgMGgxbTMgMGgybTIgMGgxbTUgMGgxTTEgNy41aDdtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDdNOSA4LjVoNG0xIDBoMm0yIDBoMW0xIDBoMk0xIDkuNWgxbTEgMGgybTEgMGgzbTIgMGgxbTEgMGgzbTEgMGgxbTEgMGgzbTEgMGgxbTIgMGgxbTEgMGgyTTUgMTAuNWgybTIgMGgxbTIgMGgybTIgMGgybTIgMGgybTEgMGgzbTEgMGgxbTEgMGgxTTEgMTEuNWgzbTMgMGgybTEgMGg0bTEgMGgybTYgMGgxbTEgMGgzbTEgMGgxTTIgMTIuNWgxbTEgMGgxbTMgMGgybTQgMGgzbTUgMGgybTIgMGgybTEgMGgxTTEgMTMuNWgzbTMgMGgzbTEgMGgzbTMgMGgybTIgMGgxbTIgMGgybTIgMGgxTTEgMTQuNWgxbTEgMGgxbTEgMGgybTEgMGgzbTIgMGgybTMgMGgzbTIgMGgybTEgMGg0TTEgMTUuNWgybTEgMGg0bTIgMGgybTMgMGgxbTMgMGgzbTQgMGgxbTEgMGgxTTEgMTYuNWgzbTEgMGgybTMgMGgxbTEgMGgxbTEgMGgxbTEgMGgxbTUgMGgxbTEgMGg2TTIgMTcuNWgxbTQgMGgybTEgMGgxbTggMGgybTEgMGgxbTQgMGgxTTIgMTguNWgzbTEgMGgxbTMgMGgxbTIgMGgybTMgMGgxbTEgMGgybTIgMGgzbTIgMGgxTTEgMTkuNWgxbTQgMGgybTEgMGgxbTEgMGgybTUgMGgxbTIgMGg1bTEgMGgyTTMgMjAuNWgybTEgMGgxbTEgMGgxbTEgMGgxbTEgMGgxbTMgMGg1bTMgMGgxbTMgMGgyTTIgMjEuNWgybTEgMGgxbTEgMGg4bTEgMGgxMW0yIDBoMU05IDIyLjVoMW0xIDBoMW0yIDBoM20yIDBoM20zIDBoMW0xIDBoMU0xIDIzLjVoN20xIDBoMW0zIDBoMm0yIDBoM20xIDBoMW0xIDBoMW0xIDBoMW0yIDBoMk0xIDI0LjVoMW01IDBoMW0xIDBoNW0yIDBoMm0zIDBoMW0zIDBoMW0yIDBoMU0xIDI1LjVoMW0xIDBoM20xIDBoMW0zIDBoMm0yIDBoM20zIDBoNU0xIDI2LjVoMW0xIDBoM20xIDBoMW0xIDBoMW0xIDBoMW0yIDBoM20xIDBoNG00IDBoMk0xIDI3LjVoMW0xIDBoM20xIDBoMW0xIDBoMW0xIDBoNG00IDBoMW0xIDBoMm0zIDBoMW0yIDBoMU0xIDI4LjVoMW01IDBoMW0yIDBoMm00IDBoMm02IDBoMW0xIDBoNE0xIDI5LjVoN20xIDBoMW0zIDBoMW00IDBoNW0xIDBoMW0xIDBoMSIvPjwvc3ZnPgo=" alt="QR-код адреса кошелька">
+    <div>
+      <div>Сеть: <span class="net">TRON · USDT TRC-20</span></div>
+      <div class="addr">TN8GGM3HEKCBR5Tyhh5MWYsrZW4RuodUE3</div>
+      <p style="color:var(--muted);font-size:14px">Внимательно проверяй последние 4 символа адреса.
+      Точную сумму для заказа выдает бот — переводи именно её.</p>
+    </div>
+  </div>
+
+  <h2>Вопросы и ответы</h2>
+  <details open><summary>Что именно я получаю?</summary>
+    <p>Полный исходный код бота (Node.js), config.json с понятными настройками, инструкцию по запуску
+    на своём компьютере или сервере за 10 минут, и поддержку 14 дней — поможем запустить и настроить.</p></details>
+  <details><summary>Почему оплата в USDT?</summary>
+    <p>Это быстро, без комиссий банков и без ограничений для карт РФ. Комиссия сети TRC-20 — около 1 USDT.</p></details>
+  <details><summary>Я не программист. Справлюсь?</summary>
+    <p>Да: нужен только компьютер с интернетом. Запуск — две команды, всё расписано по шагам.
+    Если что-то не заведётся — напишешь в поддержку, поможем бесплатно (14 дней).</p></details>
+  <details><summary>А если код не работает?</summary>
+    <p>Чиним удалённо или возвращаем деньги. Возврат — тем же адресом, с которого пришла оплата.</p></details>
+  <details><summary>Где посмотреть код до покупки?</summary>
+    <p>По запросу в боте пришлём описание архитектуры и скриншоты работы. Полный код — после оплаты (защита от копирования).</p></details>
+
+  <footer>
+    © dawer, 2026 · Поддержка: <a href="https://t.me/dawer2bot">@dawer2bot</a><br>
+    Все товары — собственное авторское ПО. Покупая, вы соглашаетесь с тем, что код предназначен для личного коммерческого использования.
+  </footer>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Что я получаю при покупке бота?","acceptedAnswer":{"@type":"Answer","text":"Полный исходный код бота на Node.js, настройки в одном файле config.json, пошаговую инструкцию запуска за 10 минут и поддержку 14 дней."}},{"@type":"Question","name":"Как оплатить и получить бота?","acceptedAnswer":{"@type":"Answer","text":"Переводите USDT в сети TRON (TRC-20) на адрес из бота, присылаете TXID — бот проверяет транзакцию в блокчейне и сразу выдаёт файлы автоматически."}},{"@type":"Question","name":"Работает ли оплата для России?","acceptedAnswer":{"@type":"Answer","text":"Да, оплата USDT TRC-20 работает без банков и карт, комиссия сети около 1 USDT."}}]}</script></body>
+</html>
