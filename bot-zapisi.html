@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Бот записи клиентов для салона, мастера, репетитора — dawer</title>
+<meta name="description" content="Telegram-бот записи клиентов: услуги, свободные слоты, уведомления владельцу, экспорт в CSV. Бесплатная open-source версия (MIT) и расширенные боты. Запуск за 10 минут.">
+<meta property="og:title" content="Бот записи клиентов — перестаньте терять клиентов в переписке">
+<meta property="og:description" content="Клиент сам выбирает услугу и время. Вам — уведомление и CSV-отчёт. Бесплатная версия с открытым кодом.">
+<meta name="robots" content="index,follow">
+<style>
+  :root { --bg:#0e1117; --card:#161b26; --line:#232a38; --text:#e8ecf3; --muted:#98a2b3; --acc:#2dd4bf; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font:16px/1.6 system-ui,'Segoe UI',Roboto,sans-serif; }
+  .wrap { max-width:820px; margin:0 auto; padding:24px 16px 64px; }
+  a { color:var(--acc); }
+  .logo { font-size:20px; font-weight:700; padding:16px 0; display:block; }
+  .logo span { color:var(--acc); }
+  h1 { font-size:clamp(24px,5vw,36px); line-height:1.25; margin:16px 0; }
+  h2 { font-size:22px; margin:36px 0 12px; }
+  p, li { color:var(--muted); }
+  p { margin:10px 0; }
+  ul { margin:12px 0 12px 20px; }
+  li { margin:6px 0; }
+  li b, p b { color:var(--text); }
+  .cta { display:inline-block; background:var(--acc); color:#06231f; font-weight:700; padding:12px 20px; border-radius:10px; text-decoration:none; margin:16px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px; margin:16px 0; }
+  code { background:#0b0e14; border:1px solid var(--line); border-radius:6px; padding:2px 8px; font-size:14px; }
+  footer { margin-top:48px; border-top:1px solid var(--line); padding-top:16px; font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="logo" href="/dawer-site/">dawer<span>.tg</span></a>
+
+  <h1>Бот записи клиентов в Telegram — запуск за 10 минут</h1>
+  <p>Для салонов красоты, барберов, мастеров маникюра, репетиторов, психологов, автосервисов.
+  Клиент пишет боту — сам выбирает услугу и свободное время. Вы получаете уведомление.
+  Никакой переписки «а на завтра есть?», никаких пропущенных клиентов.</p>
+
+  <a class="cta" href="https://t.me/dawer2bot">Посмотреть в боте →</a>
+
+  <h2>Что умеет</h2>
+  <ul>
+    <li><b>Каталог услуг с ценами</b> — настраивается в одном файле config.json</li>
+    <li><b>Свободные слоты</b> — бот учитывает занятое время, рабочие дни и выходные; двойная запись невозможна</li>
+    <li><b>Уведомления владельцу</b> — о каждой новой записи, с телефоном клиента</li>
+    <li><b>Отмена и перенос</b> — командой владельца</li>
+    <li><b>Экспорт в CSV</b> — вся база записей выгружается одним сообщением</li>
+  </ul>
+
+  <h2>Бесплатная версия с открытым кодом</h2>
+  <p>Базовый бот записи распространяется <b>бесплатно по лицензии MIT</b>:
+  <a href="https://github.com/datara2027-tech/telegram-booking-bot">github.com/datara2027-tech/telegram-booking-bot</a>.
+  Скачайте, впишите свои услуги и токен бота — готово.</p>
+
+  <div class="card">
+    <b>Нужен запуск «под ключ» или кастомизация?</b>
+    <p>В магазине есть готовые решения с установкой и поддержкой 14 дней, а также другие боты
+    (магазин цифровых товаров с приёмом USDT, рассылка + мини-CRM). Оплата — USDT TRC-20,
+    файлы выдаются автоматически после проверки оплаты в блокчейне.</p>
+    <a class="cta" href="https://t.me/dawer2bot">Каталог ботов @dawer2bot</a>
+  </div>
+
+  <h2>Частые вопросы</h2>
+  <ul>
+    <li><b>Нужен ли сервер?</b> Нет — бот работает на любом компьютере с интернетом. Позже можно перенести на дешёвый VPS.</li>
+    <li><b>Данные клиентов?</b> Хранятся у вас в локальном JSON/CSV, никуда не отправляются.</li>
+    <li><b>Как оплатить?</b> USDT в сети TRON (TRC-20) — комиссия около 1 USDT, работает с любой биржи.</li>
+  </ul>
+
+  <footer>© dawer, 2026 · <a href="/dawer-site/">Все боты</a> · <a href="https://t.me/dawer2bot">Telegram</a></footer>
+</div>
+</body>
+</html>
